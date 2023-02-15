@@ -1,17 +1,15 @@
+import styled from 'styled-components';
+
 export default function Header() {
-  return (
-    <header
-      style={{
-        display: 'flex',
-        padding: '0 15px',
-        alignItems: 'center',
-        width: '100vw',
-        height: '60px',
-        fontSize: '30px',
-        backgroundColor: 'navy',
-      }}
-    >
-      ❄️
-    </header>
-  );
+  return <HeaderWrap>❄️</HeaderWrap>;
 }
+
+const HeaderWrap = styled.header`
+  display: flex;
+  padding: 0 15px;
+  align-items: center;
+  width: 100vw;
+  height: 60px;
+  font-size: 30px;
+  background-color: navy;
+`;
